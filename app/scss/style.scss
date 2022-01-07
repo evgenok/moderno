@@ -10,6 +10,51 @@
 
 .header__text{
     margin-left: auto;
-    margin-right: 25px;
+    margin-right: 50px;
+    span{
+        color: $red;
+    }
+}
+
+.header__btn{
+    padding: 8px;
+    width: 72px;
+    border-radius: 4px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+.header__btn--login{
+    background-color: $red;
+}
+
+.header__btn--register{
+    background-color: $green;
+    margin-left: 7px;
+}
+
+.header__menu{
+    background-color: $bg;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.menu__list{
+    li{
+        display: inline-block;
+        & + li{
+            margin-left: 30px;
+        }
+    }
+
+    a{
+        font-size: 14px;
+        color: #fff;
+    }
 }
 
