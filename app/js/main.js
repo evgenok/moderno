@@ -15,11 +15,6 @@ $(function() {
           starWidth: "15px"
         });
 
-        
-
-
-        
-    
 });
 
 
