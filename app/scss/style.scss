@@ -116,6 +116,43 @@
         color: $green;
     }
 }
+.user__box{
+     position: relative;
+     height: 90px;
+     margin-top: 40px;
+}
+
+.user__box:hover{
+     .user__menu{
+          height: auto;
+          border-width: 1px;
+          overflow: hidden;
+          padding-top: 20px;
+     }
+}
+
+.user__menu{
+     position: absolute;
+     top: 69px;
+     right: 0;
+     background-color: #fff;
+     border: 0px solid rgb(204, 204, 204);
+     padding: 0 20px;
+     width: 158px;
+     transition: all .4s linear;
+     height: 0;
+     overflow: hidden;
+     a{
+          font-family: 'Roboto';
+          font-weight: 400;
+          font-size: 12px;
+          margin-bottom: 15px;
+          color: #546e7a;
+     }
+     a:hover{
+          text-decoration: underline;
+     }
+}
 
 .header__box{
     display: flex;

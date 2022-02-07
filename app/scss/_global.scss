@@ -41,6 +41,19 @@ body{
     padding: 0 30px;
 }
 
+.angle-right{
+     position: relative;
+     padding-left: 15px;
+     &::before{
+          font-family: 'icomoon';
+          content: "\f105";
+          font-size: 14px;
+          color: $green;
+          position: absolute;
+          left: 0;
+     }
+}
+
 @media (max-width: 720px) {
 
     .container__fluid{
