@@ -38,10 +38,6 @@
         font-size: 14px;
     }
 
-    & + .header__circle{
-        margin-left: 15px;
-    }
-
     span{
         position: absolute;
         width: 18px;
@@ -116,18 +112,19 @@
         color: $green;
     }
 }
-.user__box{
+
+.user__box,
+.basket__box{
      position: relative;
      height: 90px;
      margin-top: 40px;
-}
-
-.user__box:hover{
-     .user__menu{
+     &:hover{
+          .user__menu{
           height: auto;
           border-width: 1px;
           overflow: hidden;
           padding-top: 20px;
+          }
      }
 }
 
@@ -152,6 +149,94 @@
      a:hover{
           text-decoration: underline;
      }
+}
+
+.basket__menu{
+     border-top: 1px solid #e0e0e0;
+     position: absolute;
+     top: 61px;
+     right: 0;
+     border: 1px solid #e0e0e0;
+     height: 0;
+     overflow: hidden;
+     border: 0;
+}
+
+.basket__box{
+     margin-top: 54px;
+     margin-left: 15px;
+     &:hover{
+          .basket__menu{
+               overflow: auto;
+               height: auto;
+               border: 1px solid #e0e0e0;
+          } 
+     }
+}
+
+.basket__item{
+     background-color: #fff;
+     padding: 23px;
+     border: 1px solid #e0e0e0;
+     border-top: none;
+     display: flex;
+     align-items: center;
+     width: 269px;
+}
+
+.basket__img{
+     margin-right: 15px;
+}
+
+.basket__info-name,
+.basket__info-price{
+     @include f500;
+     font-size: 15px;
+     color: #000;
+     line-height: 23px;
+}
+
+.basket__info-theme{
+     font-family: 'Roboto', sans-serif;
+     font-weight: 400;
+     font-size: 12px;
+     color: $green;
+}
+
+.basket__info-price{
+     font-size: 16px;
+}
+
+.basket__summ{
+     padding: 17px 17px 12px;
+     background-color: #fff;
+}
+
+.basket__title{
+     display: flex;
+     justify-content: space-between;
+     padding-left: 13px;
+     padding-right: 22px;
+     margin-bottom: 15px;
+     @include f700;
+     color: $bg;
+     font-size: 16px;
+}
+
+.basket__btn{
+     color: #fff;
+     font-size: 14px;
+     @include f700;
+     padding: 12px 5px;
+     background-color: $green;
+     text-align: center;
+     width: 100px;
+}
+
+.basket__btn-checkout{
+     width: 123px;
+     background-color: $red;
+     margin-left: 6px;
 }
 
 .header__box{
