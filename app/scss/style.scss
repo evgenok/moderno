@@ -114,7 +114,9 @@
 }
 
 .user__box,
-.basket__box{
+.basket__box,
+.notification__box,
+.message__box{
      position: relative;
      height: 90px;
      margin-top: 40px;
@@ -151,7 +153,7 @@
      }
 }
 
-.basket__menu{
+.circle__menu{
      border-top: 1px solid #e0e0e0;
      position: absolute;
      top: 61px;
@@ -162,49 +164,102 @@
      border: 0;
 }
 
-.basket__box{
+.basket__box,
+.notification__box,
+.message__box{
      margin-top: 54px;
      margin-left: 15px;
      &:hover{
-          .basket__menu{
-               overflow: auto;
+          .header__circle::before{
+               color: $bg;
+          }
+          .circle__menu{
+               overflow: hidden;
                height: auto;
                border: 1px solid #e0e0e0;
           } 
+          .circle__item{
+               padding: 23px;
+               border-width: 1px;
+          }
      }
 }
 
-.basket__item{
+.circle__item{
      background-color: #fff;
-     padding: 23px;
+     padding: 0 23px;
      border: 1px solid #e0e0e0;
      border-top: none;
      display: flex;
      align-items: center;
      width: 269px;
+     position: relative;
+     transition: all .4s linear;
+     &::before{
+          position: absolute;
+          right: 27px;
+          top: 28px;
+          font-size: 16px;
+          color: #b0bec5;
+     }
 }
 
-.basket__img{
+.circle__img{
      margin-right: 15px;
 }
 
-.basket__info-name,
-.basket__info-price{
+.notification__menu,
+.message__menu{
+     .circle__img{
+          width: 48px;
+          height: 48px;
+          margin-right: 42px;
+          border-radius: 50%;
+     }
+     .circle__info{
+          line-height: 18px;
+     }
+}
+
+.circle-name{
+     @include f700;
+     color: $bg;
+}
+
+.circle__info-data{
+     font-size: 10px;
+     font-weight: 400;
+     color: #707070;
+}
+
+.circle__info-theme{
+     color: $green;
+     font-size: 11px;
+}
+
+.circle__info-name,
+.circle__info-price{
      @include f500;
      font-size: 15px;
      color: #000;
      line-height: 23px;
 }
 
-.basket__info-theme{
+.circle__info-theme{
      font-family: 'Roboto', sans-serif;
      font-weight: 400;
      font-size: 12px;
      color: $green;
 }
 
-.basket__info-price{
+.circle__info-price{
      font-size: 16px;
+}
+
+.icons-color:hover{
+     &::before{
+          color: $tomato;
+     }
 }
 
 .basket__summ{
