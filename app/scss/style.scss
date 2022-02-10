@@ -157,11 +157,11 @@
      border-top: 1px solid #e0e0e0;
      position: absolute;
      top: 61px;
-     right: 0;
-     border: 1px solid #e0e0e0;
+     right: auto;
      height: 0;
      overflow: hidden;
      border: 0;
+     z-index: 5;
 }
 
 .basket__box,
@@ -351,6 +351,11 @@
         font-size: 14px;
         color: #fff;
     }
+}
+
+.header__btn-menu,
+.menu__btn{
+     display: none;
 }
 
 // end header
@@ -903,3 +908,6 @@
 // end footer
 
 
+
+
+@import 'media';
