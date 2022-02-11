@@ -65,13 +65,13 @@
 }
 
 .basket{
+     margin-right: 20px;
     span{
         background-color: $green;
     }
 }
 
 .user{
-    margin-left: 20px;
     margin-right: 20px;
     padding-right: 20px;
     position: relative;
@@ -292,6 +292,10 @@
      width: 123px;
      background-color: $red;
      margin-left: 6px;
+}
+
+.header{
+     background-color: #fff;
 }
 
 .header__box{

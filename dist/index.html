@@ -19,26 +19,26 @@
 
 <body>
 
-    <header class="header">
-        <div class="header__top">
-            <div class="container">
-                <div class="header__top__inner">
+<header class="header">
+     <div class="header__top">
+          <div class="container">
+               <div class="header__top__inner">
                     <div class="header__logo">
-                        <a href="#">
-                            <img src="images/logo.png" alt="">
-                        </a>
+                         <a href="#">
+                              <img src="images/logo.png" alt="">
+                         </a>
                     </div>
 
                     <div class="header__text">
-                        <a href="">
-                            <span>Need help?</span>
-                        </a>
-                        Talk to an expert:
-                        <a class="header__phone" href="tel:61383766284">+61 3 8376 6284</a>
+                         <a href="">
+                              <span>Need help?</span>
+                         </a>
+                         Talk to an expert:
+                         <a class="header__phone" href="tel:61383766284">+61 3 8376 6284</a>
                     </div>
 
                     <div class="header__box">
-                         <div class="notification__box">
+                         <div class="notification__box header__btn--login--off">
                               <a class="notification header__circle active icon-checkmark2" href="">
                                    <span>8</span>
                               </a>
@@ -66,7 +66,7 @@
                                    </a>
                               </div>
                          </div>
-                         <div class="message__box">
+                         <div class="message__box header__btn--login--off">
                               <a class="message header__circle active icon-envelope-o" href="">
                                    <span>5</span>
                               </a>
@@ -97,7 +97,7 @@
                                    </a>
                               </div>
                          </div>
-                         <div class="basket__box">   
+                         <div class="basket__box">
                               <a class="basket header__circle active icon-shopping-cart" href="">
                                    <span>8</span>
                               </a>
@@ -127,9 +127,9 @@
                                         <a class="basket__btn basket__btn-checkout" href="">Go to Checkout</a>
                                    </div>
                               </div>
-                         </div> 
+                         </div>
                          <div class="user__box">
-                              <a class="user" href="">
+                              <a class="user header__btn--login--off" href="">
                                    <div class="user__inner">
                                         <div class="user__images">
                                              <img src="images/icons/user.jpg" alt="">
@@ -157,77 +157,83 @@
                                    </ul>
                               </div>
                          </div>
-                        <a class="header__btn header__btn--login header__btn--login--off" href="#">Login</a>
-                        <a class="header__btn header__btn--logout header__btn--login--on" href="#">Logout</a>
-                        <a class="header__btn header__btn--register header__btn--login--off" href="">Register</a>
+                         <a class="header__btn header__btn--login " href="#">Login</a>
+                         <a class="header__btn header__btn--logout header__btn--login--off" href="#">Logout</a>
+                         <a class="header__btn header__btn--register " href="#">Register</a>
                     </div>
-                </div>
-            </div>
-        </div>
+                    <div class="header__btn-menu icon-user"></div>
+               </div>
+          </div>
+     </div>
 
-        <div class="header__menu">
-            <div class="container">
-                <nav class="menu">
+     <div class="header__menu">
+          <div class="container">
+               <nav class="menu">
+                    <div class="menu__btn">
+                         <div></div>
+                         <div></div>
+                         <div></div>
+                    </div>
                     <ul class="menu__list">
-                        <li>
-                            <a href="#">
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                About
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                WordPress
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Joomla
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                PSD
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Plugins
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Components
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Pages
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Contact
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Help
-                            </a>
-                        </li>
+                         <li>
+                              <a href="#">
+                                   Home
+                              </a>
+                         </li>
+                         <li>
+                              <a href="#">
+                                   About
+                              </a>
+                         </li>
+                         <li>
+                              <a href="#">
+                                   WordPress
+                              </a>
+                         </li>
+                         <li>
+                              <a href="#">
+                                   Joomla
+                              </a>
+                         </li>
+                         <li>
+                              <a href="#">
+                                   PSD
+                              </a>
+                         </li>
+                         <li>
+                              <a href="#">
+                                   Plugins
+                              </a>
+                         </li>
+                         <li>
+                              <a href="#">
+                                   Components
+                              </a>
+                         </li>
+                         <li>
+                              <a href="#">
+                                   Pages
+                              </a>
+                         </li>
+                         <li>
+                              <a href="#">
+                                   Contact
+                              </a>
+                         </li>
+                         <li>
+                              <a href="#">
+                                   Help
+                              </a>
+                         </li>
                     </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+               </nav>
+          </div>
+     </div>
+</header>
 
 <!-- START SEARCH -->    
 
-    <section class="search" style="background-image: url(images/icons/search-bg.jpg);">
+    <section class="search page-search" style="background-image: url(images/icons/search-bg.jpg);">
         <div class="container">
             <div class="search__inner">
 
@@ -1006,67 +1012,68 @@
 <!-- START FOOTER -->
 
 <footer class="footer">
-    <div class="footer__content">
-        <div class="container">
-            <div class="footer__inner">
-                <div class="footer__col">
-                    <div class="footer__col__title">About Company</div>
-                    <div class="footer__col__text">
-                        Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse.Fusce sit amet urna iat.Praesent vel rutrum purus. 
+     <div class="footer__content">
+          <div class="container">
+               <div class="footer__inner">
+                    <div class="footer__col footer__col-address">
+                         <div class="footer__col__title">About Company</div>
+                         <div class="footer__col__text">
+                              Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse.Fusce sit
+                              amet urna iat.Praesent vel rutrum purus.
+                         </div>
+                         <div class="footer__info">PO Box 16122 Collins Street West
+                              Victoria 8007 Australia</div>
+                         <a href="tel:+61383766284" class="footer__info footer__info__phone">+61 3 8376 6284</a>
                     </div>
-                    <div class="footer__info">PO Box 16122 Collins Street West 
-                        Victoria 8007 Australia</div>
-                    <a href="tel:+61383766284" class="footer__info footer__info__phone">+61 3 8376 6284</a>
-                </div>
-                <div class="footer__col footer__col__menu">
-                    <div class="footer__col__title">Join Our Community </div>
-                    <ul class="footer__col__list">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Forums</a></li>
-                        <li><a href="">Become an Author</a></li>
-                        <li><a href="">Community Meetups</a></li>
-                        <li><a href="">Become an Affiliate</a></li>
-                    </ul>
-                </div>
-                <div class="footer__col footer__col__menu">
-                    <div class="footer__col__title">Need Help?</div>
-                    <ul class="footer__col__list">
-                        <li><a href="">Help Center</a></li>
-                        <li><a href="">Foxtar Market Terms</a></li>
-                        <li><a href="">Author Terms</a></li>
-                        <li><a href="">Foxtar Licenses</a></li>
-                        <li><a href="">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer__col">
-                    <div class="footer__col__title">Follow Us On</div>
-                    <ul class="footer__social__link">
-                        <li><a class="link__facebook" href=""></a></li>
-                        <li><a class="link__twitter" href=""></a></li>
-                        <li><a class="link__youtube" href=""></a></li>
-                        <li><a class="link__pinterest" href=""></a></li>
-                        <li><a class="link__linkedin" href=""></a></li>
-                    </ul>
-                    <div class="footer__form">
-                        <div class="footer__form__title">
-                            Newsletter Sign Up!
-                        </div>
-                        <form action="">
-                            <input type="text" placeholder="E-mail Addres">
-                            <button type="submit"></button>
-                        </form>
+                    <div class="footer__col footer__col__menu">
+                         <div class="footer__col__title">Join Our Community </div>
+                         <ul class="footer__col__list">
+                              <li><a href="">Home</a></li>
+                              <li><a href="">Forums</a></li>
+                              <li><a href="">Become an Author</a></li>
+                              <li><a href="">Community Meetups</a></li>
+                              <li><a href="">Become an Affiliate</a></li>
+                         </ul>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer__copy">
-        <div class="container">
-            <div class="footer__copy__text">
-                © 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.
-            </div>
-        </div>
-    </div>
+                    <div class="footer__col footer__col__menu">
+                         <div class="footer__col__title">Need Help?</div>
+                         <ul class="footer__col__list">
+                              <li><a href="">Help Center</a></li>
+                              <li><a href="">Foxtar Market Terms</a></li>
+                              <li><a href="">Author Terms</a></li>
+                              <li><a href="">Foxtar Licenses</a></li>
+                              <li><a href="">Contact Us</a></li>
+                         </ul>
+                    </div>
+                    <div class="footer__col">
+                         <div class="footer__col__title footer__col-social">Follow Us On</div>
+                         <ul class="footer__social__link">
+                              <li><a class="link__facebook" href=""></a></li>
+                              <li><a class="link__twitter" href=""></a></li>
+                              <li><a class="link__youtube" href=""></a></li>
+                              <li><a class="link__pinterest" href=""></a></li>
+                              <li><a class="link__linkedin" href=""></a></li>
+                         </ul>
+                         <div class="footer__form">
+                              <div class="footer__form__title">
+                                   Newsletter Sign Up!
+                              </div>
+                              <form action="">
+                                   <input type="text" placeholder="E-mail Addres">
+                                   <button type="submit"></button>
+                              </form>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <div class="footer__copy">
+          <div class="container">
+               <div class="footer__copy__text">
+                    © 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.
+               </div>
+          </div>
+     </div>
 </footer>
 
 <!-- END FOOTER -->
